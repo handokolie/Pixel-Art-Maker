@@ -31,6 +31,17 @@ function makeGrid() {
   }
 }
 
+// Function that changes the colour of each grid.
+function changeColor() {
+  const cells = document.querySelectorAll('td');
+  for (var i = 0; i < cells.length; i++) {
+    cells[i].addEventListener('click', function (event) {
+      const color = document.querySelector('#colorPicker').value;
+      event.target.style.backgroundColor = color;
+    });
+  }
+}
+
 // When the submit button is clicked by the user, call makeGrid()
 const submit = document.querySelector('input[type="submit"]');
 
