@@ -49,3 +49,10 @@ submit.addEventListener('click', function (event) {
   event.preventDefault();
   makeGrid();
 });
+
+// When the Pick A Color button is clicked by the user, call changeColor().
+const pickColor = document.querySelector('input[type="color"]');
+
+pickColor.addEventListener('click', function () {
+  changeColor();
+});
