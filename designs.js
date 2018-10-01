@@ -17,9 +17,11 @@ function makeGrid() {
     const tableRow = document.createElement('tr');
     table.appendChild(tableRow);
     for (var c = 0; c < width; c += 1) {
-      /** Create a new cell within each row
-      * and attach an event listener in each newly added cell.*/
+      // Create a new cell within each row.      
       const tableColumn = document.createElement('td');
+      /** Attach an event listener in each newly added cell,
+      * so the grids could still be coloured
+      * even before the user 'Pick A Color'.*/
       tableColumn.addEventListener('click', function setColor() {
         tableColumn.style.backgroundColor = color;
       });
