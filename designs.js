@@ -12,11 +12,11 @@ function makeGrid() {
   const color = document.querySelector('#colorPicker').value;
   /** Use a nested for loop to construct the canvas
   * and attach an event listener in each cell of the canvas.*/
-  for (var r = 0; r < height; r += 1) {
+  for (var r = 0; r < height; r++) {
     // Create a new row and append the newly added row to the canvas.
     const tableRow = document.createElement('tr');
     table.appendChild(tableRow);
-    for (var c = 0; c < width; c += 1) {
+    for (var c = 0; c < width; c++) {
       // Create a new cell within each row.      
       const tableColumn = document.createElement('td');
       /** Attach an event listener in each newly added cell,
@@ -42,7 +42,7 @@ function changeColor() {
   }
 }
 
-// When the submit button is clicked by the user, call makeGrid()
+// When the submit button is clicked by the user, call makeGrid().
 const submit = document.querySelector('input[type="submit"]');
 
 submit.addEventListener('click', function (event) {
