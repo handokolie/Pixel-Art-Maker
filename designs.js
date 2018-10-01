@@ -3,7 +3,7 @@
 function makeGrid() {
   // Assign the height and width of the canvas as variables.
   const height = document.querySelector('#inputHeight').value;
-  const width = document.querySelector('input#inputWidth').value;
+  const width = document.querySelector('#inputWidth').value;
   // Assign the canvas DOM as a variable table.
   const table = document.querySelector('#pixelCanvas');
   // Refresh the table when the makeGrid function is called.
