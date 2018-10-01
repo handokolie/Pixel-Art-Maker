@@ -22,7 +22,7 @@ function makeGrid() {
       /** Attach an event listener in each newly added cell,
       * so the grids could still be coloured
       * even before the user 'Pick A Color'.*/
-      tableColumn.addEventListener('click', function setColor() {
+      tableColumn.addEventListener('click', function () {
         tableColumn.style.backgroundColor = color;
       });
       // Append the newly added cell to the row.
